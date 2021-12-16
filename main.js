@@ -15,8 +15,8 @@ function new_image(get_image)
         block_image_object.scaleToWidth(block_image_width);
         block_image_object.scaleToHeight(block_image_height);
         block_image_object.set( {
-            top:player_y,
-            left:player_x
+            top:block_y,
+            left:block_x
         });
         canvas.add(block_image_object);
 });
@@ -29,9 +29,9 @@ function my_keydown(e) {
 keyPressed = e.keyCode;
 console.log(keyPressed);
 
-	if(keyPressed == '82') // add appropriate keycode
+	if(keyPressed == '82') 
 	{
-		new_image("rr1.png.jpg")
+		new_image("rr1.png")
         console.log("r");
 	}
 	if(keyPressed == '71')
